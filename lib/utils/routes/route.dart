@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_state_management/view_models/provider_view_model/provider_view_model.dart';
 import 'package:flutter_state_management/views/sections/change_notifier_section/change_notifier_section.dart';
 import 'package:flutter_state_management/views/sections/getx_section/getx_section.dart';
+import 'package:flutter_state_management/views/sections/mobx_section/mobx_section.dart';
 import 'package:flutter_state_management/views/sections/provider_section/provider_section.dart';
 import 'package:flutter_state_management/views/sections/value_notifier_section/value_notifier_section.dart';
 
@@ -15,6 +16,7 @@ class Routes {
       ScreensRoutes.provider: (context) =>
           ProviderSection(viewModel: ProviderViewModel.instancialize()),
       ScreensRoutes.getx: (context) => const GetxSection(),
+      ScreensRoutes.mobx: (context) => const MobxSection(),
     };
   }
 
