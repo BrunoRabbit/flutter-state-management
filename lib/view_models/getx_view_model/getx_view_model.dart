@@ -7,15 +7,15 @@ import 'package:flutter_state_management/models/counter_model.dart';
 class GetxViewModel extends GetxController {
   Rx<CounterModel> counterModel = CounterModel(value: 0).obs;
 
-  int increment() {
-    return counterModel.value.value++;
+  void increment() {
+    counterModel.value.value++;
   }
 
-  int decrement() {
-    return counterModel.value.value--;
+  void decrement() {
+    counterModel.value.value--;
   }
 
-  int reset() {
-    return counterModel.value.value = 0;
+  void reset() {
+    counterModel.value.value = 0;
   }
 }

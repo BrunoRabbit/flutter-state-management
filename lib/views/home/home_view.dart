@@ -39,7 +39,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ElevatedButton(
               child: const Text('GetX'),
               onPressed: () {
-                Get.put(GetxViewModel());
                 Routes.navigateTo(
                   context,
                   ScreensNames.getx.name,
