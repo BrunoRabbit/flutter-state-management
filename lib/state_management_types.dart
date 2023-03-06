@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_state_management/view_models/provider_view_model/provider_view_model.dart';
+import 'package:flutter_state_management/views/bloc/counter_bloc.dart';
 import 'package:provider/provider.dart';
 
 // * I made this screen just for organization, if I have many state managers it will be better to read, although you shouldn't use several state managers.
@@ -20,9 +22,12 @@ class StateManagementTypes extends StatefulWidget {
 class _StateManagementTypesState extends State<StateManagementTypes> {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => ProviderViewModel.instancialize(),
-      child: widget.materialChild,
+    return BlocProvider(
+      create: (context) => CounterBloc(),
+      child: ChangeNotifierProvider(
+        create: (context) => ProviderViewModel.instancialize(),
+        child: widget.materialChild,
+      ),
     );
   }
 }

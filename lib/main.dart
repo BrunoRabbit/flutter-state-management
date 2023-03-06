@@ -25,7 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-  // ! SOME IDEAS
-  // ? TEST 
-  // ? BLOC, PROVIDER, MOBX, FLUTTER NATIVE STATE, GETX

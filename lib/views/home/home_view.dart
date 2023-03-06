@@ -7,6 +7,7 @@ enum ScreensNames {
   provider,
   getx,
   mobx,
+  bloc,
 }
 
 class HomeScreen extends StatefulWidget {
@@ -28,8 +29,13 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              onPressed: () {},
               child: const Text('BloC'),
+              onPressed: () {
+                 Routes.navigateTo(
+                  context,
+                  ScreensNames.bloc.name,
+                );
+              },
             ),
             ElevatedButton(
               child: const Text('MobX'),
