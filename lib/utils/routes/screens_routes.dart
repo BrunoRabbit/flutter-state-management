@@ -6,4 +6,5 @@ class ScreensRoutes {
   static const String valueNotifier = '/valueNotifier';
   static const String provider = '/provider';
   static const String getx = '/getx';
+  static const String mobx = '/mobx';
 }

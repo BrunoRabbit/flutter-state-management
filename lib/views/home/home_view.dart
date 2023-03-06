@@ -6,6 +6,7 @@ enum ScreensNames {
   valueNotifier,
   provider,
   getx,
+  mobx,
 }
 
 class HomeScreen extends StatefulWidget {
@@ -31,8 +32,13 @@ class _HomeScreenState extends State<HomeScreen> {
               child: const Text('BloC'),
             ),
             ElevatedButton(
-              onPressed: () {},
               child: const Text('MobX'),
+              onPressed: () {
+                Routes.navigateTo(
+                  context,
+                  ScreensNames.mobx.name,
+                );
+              },
             ),
             ElevatedButton(
               child: const Text('GetX'),
