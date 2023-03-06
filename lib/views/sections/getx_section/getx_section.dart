@@ -6,10 +6,10 @@ import 'package:get/get.dart';
 class GetxSection extends GetView<GetxViewModel> {
   const GetxSection({Key? key}) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
-  final init =Get.put(GetxViewModel());
+    final init = Get.put(GetxViewModel());
+    
     return Scaffold(
       appBar: AppBar(
         title: const Text('GetX'),

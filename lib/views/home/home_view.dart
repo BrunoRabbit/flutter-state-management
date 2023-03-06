@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_state_management/utils/routes/route.dart';
-import 'package:flutter_state_management/view_models/getx_view_model/getx_view_model.dart';
-import 'package:get/get.dart';
 
 enum ScreensNames {
   changeNotifier,
