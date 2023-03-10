@@ -26,7 +26,7 @@ class _BlocSectionState extends State<BlocSection> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(''),
+        title: const Text('Bloc'),
       ),
       body: BlocBuilder<CounterBloc, CounterState>(
         bloc: bloc,
